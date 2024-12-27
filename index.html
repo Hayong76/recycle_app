@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recycle App Mockup</title>
     <style>
         /* Basic CSS reset and base styling */
@@ -161,6 +162,31 @@
             color: #777;
             margin-top: 20px;
         }
+
+        @media (max-width: 768px) {
+    .container, .search-section, .items-grid {
+        width: auto; /* Adjusts width to fit smaller screens */
+        padding: 10px;
+    }
+
+    .item-card {
+        width: 100%; /* Makes cards full width on small screens */
+    }
+
+    .dashboard {
+        flex-direction: column; /* Stacks elements vertically */
+    }
+
+    .circular-chart {
+        width: 80px; /* Smaller charts on smaller screens */
+        height: 80px;
+    }
+    .items-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjusts the size and number of columns based on the screen width */
+}
+
+}
+
     </style>
 </head>
 <body>
